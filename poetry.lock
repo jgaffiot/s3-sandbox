@@ -251,6 +251,19 @@ python-versions = ">=3.7"
 gitdb = ">=4.0.1,<5"
 
 [[package]]
+name = "ipdb"
+version = "0.13.9"
+description = "IPython-enabled pdb"
+category = "dev"
+optional = false
+python-versions = ">=2.7"
+
+[package.dependencies]
+decorator = {version = "*", markers = "python_version > \"3.6\""}
+ipython = {version = ">=7.17.0", markers = "python_version > \"3.6\""}
+toml = {version = ">=0.10.2", markers = "python_version > \"3.6\""}
+
+[[package]]
 name = "ipython"
 version = "8.1.1"
 description = "IPython: Productive Interactive Computing"
@@ -572,6 +585,14 @@ optional = false
 python-versions = ">=3.6.1"
 
 [[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "dev"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -622,7 +643,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f7a840772b640cdd5b3c02e2267d24c53da7d069dd67a6bd47c5c39d274f8dea"
+content-hash = "03e2fb88df087c102628efdd56a431f190800d9eac83607d716b771791622aa5"
 
 [metadata.files]
 appnope = [
@@ -725,6 +746,9 @@ gitdb = [
 gitpython = [
     {file = "GitPython-3.1.27-py3-none-any.whl", hash = "sha256:5b68b000463593e05ff2b261acff0ff0972df8ab1b70d3cdbd41b546c8b8fc3d"},
     {file = "GitPython-3.1.27.tar.gz", hash = "sha256:1c885ce809e8ba2d88a29befeb385fcea06338d3640712b59ca623c220bb5704"},
+]
+ipdb = [
+    {file = "ipdb-0.13.9.tar.gz", hash = "sha256:951bd9a64731c444fd907a5ce268543020086a697f6be08f7cc2c9a752a278c5"},
 ]
 ipython = [
     {file = "ipython-8.1.1-py3-none-any.whl", hash = "sha256:6f56bfaeaa3247aa3b9cd3b8cbab3a9c0abf7428392f97b21902d12b2f42a381"},
@@ -894,6 +918,10 @@ stevedore = [
 tokenize-rt = [
     {file = "tokenize_rt-4.2.1-py2.py3-none-any.whl", hash = "sha256:08a27fa032a81cf45e8858d0ac706004fcd523e8463415ddf1442be38e204ea8"},
     {file = "tokenize_rt-4.2.1.tar.gz", hash = "sha256:0d4f69026fed520f8a1e0103aa36c406ef4661417f20ca643f913e33531b3b94"},
+]
+toml = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
